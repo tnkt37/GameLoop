@@ -6,7 +6,7 @@ C#でゲームループを回すためのクラス
   
 使い方:  
   
-FPSTimer timer = new FPSTimer();  
+TNKTLib.FPSTimer timer = new FPSTimer();  
 timer.Fps = 30;  
 timer.GameUpdate += timer_GameUpdate;//毎フレーム呼び出される更新処理を追加  
 timer.GameRender += timer_GameRender;//描画処理を追加  
