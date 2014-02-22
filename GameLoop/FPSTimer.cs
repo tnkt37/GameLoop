@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
+//using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 
@@ -492,11 +493,11 @@ namespace TNKTLib
         /// 引数に指定したフォームのClosingイベントにスレッドを中止する処理を追加します
         /// </summary>
         /// <param name="form"></param>
-        public void UseWindowsForm(Form form)
-        {
-            if (form != null)
-                form.FormClosing += new FormClosingEventHandler(FormClosing);
-        }
+        //public void UseWindowsForm(Form form)
+        //{
+        //    if (form != null)
+        //        form.FormClosing += new FormClosingEventHandler(FormClosing);
+        //}
 
         #endregion パブリックメソッド
 
@@ -507,10 +508,10 @@ namespace TNKTLib
             thread.IsBackground = true;
         }
 
-        void FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Abort();
-        }
+        //void FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    Abort();
+        //}
         #endregion プライベートメソッド
     }
 }
