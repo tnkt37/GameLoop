@@ -8,7 +8,7 @@ C#でゲームループを回すためのクラス
   
 TNKTLib.FPSTimer timer = new FPSTimer();  
 timer.Fps = 30;  
-timer.GameInit += () => {};//初期化処理を追加。他のイベントもこれと同じ型
+timer.GameInit += () => {};//初期化処理を追加。他のイベントもこれと同じ型  
 timer.GameUpdate += timer_GameUpdate;//毎フレーム呼び出される更新処理を追加  
 timer.GameRender += timer_GameRender;//描画処理を追加  
 timer.GameStart();  
